@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="whitebox">
+        <item name="android:background">@color/white</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textSize">@dimen/bot_text_size</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="fontFamily">@font/actor</item>
+    </style>
+</resources>

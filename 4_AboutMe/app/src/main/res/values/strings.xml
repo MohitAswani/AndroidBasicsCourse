@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">About Me</string>
+    <string name="name">Mohit Aswani</string>
+    <string name="code_image">Code Image</string>
+    <string name="bio">Hi! My name is <b>Mohit</b>. Thank You for taking the time to view my profile 😄
+                        \n 🔭 I’m currently working on developing android apps and cloud computing.
+
+                        \n 🌱 I’m currently learning Kotlin , Android and Google Cloud
+
+                        \n 📫 You can reach me at : <b><u>aswanim96@gmail.com</u></b>
+
+                        \n 💬 Talk to me about C , Cpp , Java , Competitive programming
+
+                        \n My GitHub profile : <b><u>https://github.com/MohitAswani</u></b>
+
+                        \n Thank you for visiting my profile.
+
+                        \n\nIf you wish please enter your name below: </string>
+    <string name="hint_text">Enter Your Name</string>
+    <string name="done">Done</string>
+</resources>

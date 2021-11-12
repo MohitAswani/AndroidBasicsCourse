@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable
+            name="myName"
+            type="com.example.aboutme.MyName" />
+    </data>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black_background"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:id="@+id/textView"
+            style="@style/NameStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@={myName.name}"
+            android:textAlignment="center" />
+
+        <ScrollView
+            android:id="@+id/bio_scroll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/code_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/image_height"
+                    android:layout_marginTop="@dimen/layout_margin"
+                    android:contentDescription="@string/code_image"
+                    app:srcCompat="@drawable/android_advanced_topics" />
+
+                <TextView
+                    android:id="@+id/bio_text"
+                    style="@style/BioText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bio"
+                    android:textAlignment="textStart" />
+
+                <EditText
+                    android:id="@+id/personName_edit"
+                    style="@style/BioText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/hint_text"
+                    android:inputType="textPersonName"
+                    android:textAlignment="center" />
+
+                <Button
+                    android:id="@+id/done_button"
+                    style="@style/button_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/done" />
+
+                <TextView
+                    android:id="@+id/nickname_text"
+                    style="@style/NameStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/teal_200"
+                    android:paddingBottom="@dimen/small_padding"
+                    android:text="@={myName.nickname}"
+                    android:textAlignment="center"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+</layout>
