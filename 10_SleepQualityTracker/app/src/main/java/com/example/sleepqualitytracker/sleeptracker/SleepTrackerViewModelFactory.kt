@@ -26,7 +26,7 @@ import com.example.sleepqualitytracker.database.SleepDatabaseDao
  *
  * Provides the SleepDatabaseDao and context to the ViewModel.
  */
-abstract class SleepTrackerViewModelFactory(
+class SleepTrackerViewModelFactory(
     private val dataSource: SleepDatabaseDao,
     private val application: Application) : ViewModelProvider.Factory {
     @Suppress("unchecked_cast")

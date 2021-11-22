@@ -22,8 +22,14 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
+import androidx.lifecycle.Observer
+import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.NavDirections
+import androidx.navigation.fragment.findNavController
 import com.example.sleepqualitytracker.R
+import com.example.sleepqualitytracker.database.SleepDatabase
 import com.example.sleepqualitytracker.databinding.FragmentSleepTrackerBinding
+import com.example.sleepqualitytracker.sleepquality.SleepQualityFragment
 
 /**
  * A fragment with buttons to record start and end times for sleep, which are saved in
@@ -43,6 +49,27 @@ class SleepTrackerFragment : Fragment() {
         // Get a reference to the binding object and inflate the fragment views.
         val binding: FragmentSleepTrackerBinding = DataBindingUtil.inflate(
                 inflater, R.layout.fragment_sleep_tracker, container, false)
+
+        val application= requireNotNull(this.activity).application
+
+        val dataSource=SleepDatabase.getInstance(application).sleepDatabaseDao
+
+        val viewModelFactory=SleepTrackerViewModelFactory(dataSource,application)
+
+        val viewModel=ViewModelProvider(this,viewModelFactory).get(SleepTrackerViewModel::class.java)
+
+        binding.lifecycleOwner = this
+
+        binding.viewModel=viewModel
+
+        viewModel.navigateToSleepQuality.observe(viewLifecycleOwner, Observer {
+            night->
+            night?.let {
+                this.findNavController().navigate(SleepTrackerFragmentDirections.actionSleepTrackerFragmentToSleepQualityFragment(night.id))
+                viewModel.doneNavigating()
+            }
+        })
+
 
         return binding.root
     }
