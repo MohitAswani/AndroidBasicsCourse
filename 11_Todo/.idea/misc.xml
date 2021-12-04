@@ -4,7 +4,15 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/CODING/Android_Dev/Android Courses/2_Android_Basics/11_Todo/app/src/main/res/drawable/box.xml" value="0.28072916666666664" />
+        <entry key="..\:/CODING/Android_Dev/Android Courses/2_Android_Basics/11_Todo/app/src/main/res/drawable/ic_sleep_0.xml" value="0.28072916666666664" />
+        <entry key="..\:/CODING/Android_Dev/Android Courses/2_Android_Basics/11_Todo/app/src/main/res/drawable/ic_sleep_1.xml" value="0.28072916666666664" />
+        <entry key="..\:/CODING/Android_Dev/Android Courses/2_Android_Basics/11_Todo/app/src/main/res/drawable/ic_sleep_2.xml" value="0.28072916666666664" />
+        <entry key="..\:/CODING/Android_Dev/Android Courses/2_Android_Basics/11_Todo/app/src/main/res/drawable/ic_sleep_3.xml" value="0.28072916666666664" />
+        <entry key="..\:/CODING/Android_Dev/Android Courses/2_Android_Basics/11_Todo/app/src/main/res/drawable/ic_sleep_4.xml" value="0.28072916666666664" />
+        <entry key="..\:/CODING/Android_Dev/Android Courses/2_Android_Basics/11_Todo/app/src/main/res/drawable/ic_sleep_5.xml" value="0.28072916666666664" />
+        <entry key="..\:/CODING/Android_Dev/Android Courses/2_Android_Basics/11_Todo/app/src/main/res/font/roboto.xml" value="0.16822916666666668" />
         <entry key="..\:/CODING/Android_Dev/Android Courses/2_Android_Basics/11_Todo/app/src/main/res/layout/activity_main.xml" value="0.12613521695257315" />
+        <entry key="..\:/CODING/Android_Dev/Android Courses/2_Android_Basics/11_Todo/app/src/main/res/layout/fragment_sleep_quality.xml" value="0.18327272091700048" />
         <entry key="..\:/CODING/Android_Dev/Android Courses/2_Android_Basics/11_Todo/app/src/main/res/layout/todo_task_fragment.xml" value="0.1" />
       </map>
     </option>

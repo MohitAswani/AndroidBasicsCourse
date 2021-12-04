@@ -63,6 +63,7 @@
             android:layout_marginEnd="16dp"
             >
             <TextView
+                android:padding="16dp"
                 android:text="@{ViewModel.taskStrings}"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

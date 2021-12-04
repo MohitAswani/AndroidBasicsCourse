@@ -9,5 +9,21 @@
         android:id="@+id/todoTaskFragment"
         android:name="com.example.todo.todotasks.TodoTaskFragment"
         android:label="todo_task_fragment"
-        tools:layout="@layout/todo_task_fragment" />
+        tools:layout="@layout/todo_task_fragment" >
+        <action
+            android:id="@+id/action_todoTaskFragment_to_taskTrackerFragment"
+            app:destination="@id/taskTrackerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/taskTrackerFragment"
+        android:name="com.example.todo.tasktracker.TaskTrackerFragment"
+        android:label="TaskTrackerFragment"
+        tools:layout="@layout/fragment_task_quality">
+        <argument
+            android:name="task_quality"
+            app:argType="long"/>
+        <action
+            android:id="@+id/action_taskTrackerFragment_to_todoTaskFragment"
+            app:destination="@id/todoTaskFragment" />
+    </fragment>
 </navigation>
